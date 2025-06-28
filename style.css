@@ -1,0 +1,114 @@
+.nav{
+    background-color:  #8B4513; /* SaddleBrown */
+    display: flex;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+.nav ul {
+    list-style: none;   
+    display: flex;
+    padding: 12px;
+    margin: 10px;
+    
+}
+.nav ul li {
+    margin-right: 20px;
+    border:1px solid black;
+    padding: 0px;
+    border-radius: 8px; 
+    background-color:none; /* SaddleBrown */
+    color: whitesmoke;
+}
+.Btn {
+    background-color: #e9ac70; /* Light color for buttons */
+    color: rgb(22, 16, 16);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: #000000 0px 2px 5px; /* Subtle shadow for depth */
+}   
+.Btn:hover {
+    background-color: rgb(12, 173, 154);
+    color: white;
+}
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px;
+    border-radius: 50%; /* Optional: make it circular */
+    border: 3px #000000;
+}
+ 
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 🔼 Push content to top */
+  align-items: center;         /* Center horizontally */
+  height: 100vh;               /* Optional: full viewport height */
+  padding-top: 20px;           /* Add spacing from the top */
+  color: white;
+  text-align: center;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  /* Remove background-image from here */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url(Images/bg2.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.4); /* Adjust value as needed */
+  z-index: -1;
+  pointer-events: none;
+}
+
+.firstSection {
+    font-size: 2.5em;
+    color: #96e9c5; /* Light color for headings */
+    padding-top: 0px;
+    
+}
+.secondSection {
+    font-size: 2em;
+    color: #d0d2e5; /* Light color for headings */
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 1.5em;
+    color: #6d79ea; /* Light color for headings */
+    margin-bottom: 20px;
+}
+.footer {
+    background-color: #8B4513; /* SaddleBrown */
+    color: whitesmoke;
+    text-align: center;
+    padding: 0px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+}
+.artist {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Maintain aspect ratio */
+    margin: 20px;
+    border-radius: 50%; /* Optional: make it circular */
+    border: 3px #000000;
+    float: right;
+    zoom: 200%;
+    
+}
+.footer li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}

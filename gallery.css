@@ -1,0 +1,123 @@
+.nav{
+    background-color:  #8B4513; /* SaddleBrown */
+    display: flex;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+.nav ul {
+    list-style: none;   
+    display: flex;
+    padding: 12px;
+    margin: 10px;
+    
+}
+.nav ul li {
+    margin-right: 20px;
+    border: 1px solid black;
+    padding: 0px;
+    border-radius: 8px; 
+    background-color: transparent;
+    color: whitesmoke;
+}
+.Btn {
+    background-color: #e9ac70;
+    color: rgb(17, 15, 15);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: #000000 0px 2px 5px;
+    transition: background 0.3s, color 0.3s;
+}   
+.Btn:hover {
+    background-color: rgb(12, 173, 154);
+    color: white;
+}
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px;
+    border-radius: 50%; /* Optional: make it circular */
+    border: 3px #000000;
+    float: left ;
+}
+
+body {
+  background-image: url(bg1.avif); /* Adjust path */
+         /* Make it cover full screen */
+  ;  
+}
+.footer {
+    background-color: #8B4513; /* SaddleBrown */
+    color: whitesmoke;
+    text-align: center;
+    padding: 0px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+}
+.footer li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 24px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #8B4513 #e9ac70;
+    width: 90%;
+    height: fit-content;
+    padding-top: 30px;
+}
+.carousel {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+
+/* Animation */
+@keyframes slideShow {
+  0%   { margin-left: 0%; }
+  33%  { margin-left: 0%; }
+  36%  { margin-left: -100%; }
+  66%  { margin-left: -100%; }
+  69%  { margin-left: -200%; }
+  99%  { margin-left: -200%; }
+  100% { margin-left: 0%; }
+}
+
+/* Each image */
+.slides img {
+  flex: 0 0 80%;
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  scroll-snap-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  background: #eee;
+  transition: transform 0.3s;
+}
+
+.slides img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .slides img {
+    height: 220px;
+    max-width: 90vw;
+  }
+}
